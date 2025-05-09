@@ -1,3 +1,5 @@
+# Create the step definitions file content
+step_definitions_content = """
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 const baseUrl = Cypress.env('intranetUrl');
@@ -28,3 +30,11 @@ When("I click on the search button", () => {
 Then("I should see the filtered resource list", () => {
   cy.get('[data-testid="resource-list"]').should("exist").and("not.be.empty");
 });
+"""
+
+# Save the content to a step definitions file
+with open('cypress/e2e/features/step_definitions/resourcePlanningSteps.js', 'w') as file:
+    file.write(step_definitions_content)
+
+print("Step definitions file 'resourcePlanningSteps.js' has been created successfully.")
+
