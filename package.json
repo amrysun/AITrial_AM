@@ -1,0 +1,26 @@
+{
+  "name": "aitrial_am",
+  "version": "1.0.0",
+  "description": "To initialize your GitHub repository with a README.md file, you have a couple of options depending on whether you're using the GitHub website or Git on your local machine.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrysun/AITrial_AM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrysun/AITrial_AM/issues"
+  },
+  "homepage": "https://github.com/amrysun/AITrial_AM#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^14.3.3",
+    "esbuild": "^0.25.4"
+  }
+}
